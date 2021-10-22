@@ -17,9 +17,9 @@ import 'package:flutter/material.dart';
 
 // import 'signup_page.dart';x
 
-class SignInPage extends StatefulWidget {
+class SignInScreen extends StatefulWidget {
   static String routeName = 'signInPage';
-  const SignInPage({
+  const SignInScreen({
     Key? key,
   }) : super(key: key);
 
@@ -27,7 +27,7 @@ class SignInPage extends StatefulWidget {
   _SignInPageController createState() => _SignInPageController();
 }
 
-class _SignInPageController extends State<SignInPage> {
+class _SignInPageController extends State<SignInScreen> {
   @override
   Widget build(BuildContext context) => _SignInPageView(this);
 
@@ -141,7 +141,7 @@ class _SignInPageController extends State<SignInPage> {
   }
 }
 
-class _SignInPageView extends WidgetView<SignInPage, _SignInPageController> {
+class _SignInPageView extends WidgetView<SignInScreen, _SignInPageController> {
   // ignore: annotate_overrides, prefer_typing_uninitialized_variables, overridden_fields
   final state;
   const _SignInPageView(this.state) : super(state);

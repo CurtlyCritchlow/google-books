@@ -10,7 +10,7 @@ import 'package:google_books/utils/utils.dart';
 import 'package:google_books/widgets/snackbars.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:google_books/screens/authentication_screens/signin_page.dart';
+import 'package:google_books/screens/authentication_screens/signin_screen.dart';
 
 class SignUpPage extends StatefulWidget {
   static String routeName = 'signUpPage';
@@ -85,7 +85,7 @@ class _SignUpPageController extends State<SignUpPage> {
 
   void _handleSigninNavigation() {
     Navigator.of(context)
-        .push(PageRoutes.defaultRoute(() => const SignInPage()));
+        .push(PageRoutes.defaultRoute(() => const SignInScreen()));
   }
 
   void _handlePasswordSaved(String? value) => _password = value;

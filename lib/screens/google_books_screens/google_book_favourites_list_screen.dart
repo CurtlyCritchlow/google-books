@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_books/services/service_models/google_books_service_model.dart';
 import 'package:google_books/widgets/center_header.dart';
+import 'package:google_books/widgets/custom_app_bar.dart';
 import 'package:provider/provider.dart';
 
 import 'package:google_books/services/service_models/google_books_favorites_service_model.dart';

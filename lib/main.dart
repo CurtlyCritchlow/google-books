@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
-import 'package:google_books/screens/authentication_screens/signin_page.dart';
+import 'package:google_books/screens/authentication_screens/signin_screen.dart';
 import 'package:google_books/screens/authentication_screens/signup_page.dart';
 import 'package:google_books/screens/google_books_screens/book_list_screen.dart';
 import 'package:google_books/screens/google_books_screens/google_book_favourites_list_screen.dart';
@@ -59,8 +59,9 @@ class MyApp extends StatelessWidget {
                 secondary: const Color(0xFFF8C630),
               ),
             ),
-            home:
-                authUser == null ? const SignInPage() : const BookListScreen(),
+            home: authUser == null
+                ? const SignInScreen()
+                : const BookListScreen(),
             routes: {
               SignUpPage.routeName: (context) => const SignUpPage(),
               BookListScreen.routeName: (context) => const BookListScreen(),

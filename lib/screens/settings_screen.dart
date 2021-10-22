@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'package:google_books/commands/authentication/signout_command.dart';
-import 'package:google_books/screens/authentication_screens/signin_page.dart';
+import 'package:google_books/screens/authentication_screens/signin_screen.dart';
 import 'package:google_books/utils/abstract.dart';
 import 'package:google_books/utils/page_routes.dart';
 import 'package:google_books/widgets/app_bottom_navigation_bar.dart';
@@ -35,8 +35,9 @@ class SettingsScreen extends StatelessWidget {
 
   void _handleSignOut(BuildContext context) {
     SignoutCommand(context).run();
-    Navigator.of(context)
-        .push(PageRoutes.defaultRoute(() => const SignInPage()));
+    Navigator.of(context).pushAndRemoveUntil(
+        PageRoutes.defaultRoute(() => const SignInScreen()),
+        (Route<dynamic> route) => false);
   }
 }
 

@@ -7,6 +7,7 @@ import 'package:google_books/utils/abstract.dart';
 import 'package:google_books/utils/styles.dart';
 import 'package:google_books/utils/utils.dart';
 import 'package:google_books/widgets/app_bottom_navigation_bar.dart';
+import 'package:google_books/widgets/custom_app_bar.dart';
 import 'package:google_books/widgets/google_book_card.dart';
 import 'package:google_books/widgets/snackbars.dart';
 
